@@ -1,10 +1,17 @@
-// calculator.test.js
-const { add } = require('./calculator');
+const { add, subtract, multiply, divide } = require('./calculator');
 
-test('adds 1 + 2 to equal 3', () => {
-  expect(add(1, 2)).toBe(3);
+test('subtract 5 - 2 = 3', () => {
+  expect(subtract(5, 2)).toBe(3);
 });
 
-test('adds -1 + 1 to equal 0', () => {
-  expect(add(-1, 1)).toBe(0);
+test('multiply 3 * 4 = 12', () => {
+  expect(multiply(3, 4)).toBe(7);
+});
+
+test('divide 10 / 2 = 5', () => {
+  expect(divide(10, 2)).toBe(5);
+});
+
+test('divide by zero should throw error', () => {
+  expect(() => divide(1, 0)).toThrow('Cannot divide by zero');
 });
