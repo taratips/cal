@@ -5,7 +5,7 @@ test('subtract 5 - 2 = 3', () => {
 });
 
 test('multiply 3 * 4 = 12', () => {
-  expect(multiply(3, 4)).toBe(7);
+  expect(multiply(3, 4)).toBe(12);
 });
 
 test('divide 10 / 2 = 5', () => {
